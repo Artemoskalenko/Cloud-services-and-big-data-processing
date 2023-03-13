@@ -29,5 +29,22 @@ def sum_of_rows(n: int):
     return int("1" * n) + sum_of_rows(n-1)
 
 
+def test():
+    # is_odd_number test
+
+    assert is_odd_number('') == ''
+    assert is_odd_number(5) is False
+    assert is_odd_number(6) is True
+
+    # five_prime_numbers test
+
+    assert five_prime_numbers() == 28
+
+    # sum_of_rows test
+
+    assert sum_of_rows(4) == 1234
+    assert sum_of_rows(5) == 12345
+    assert sum_of_rows(9) == 123456789
 
 
+test()
